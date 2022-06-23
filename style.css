@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+
+  color: white;
+}
+
+.principal {
+  width: 100%;
+  height: calc(100vh - 47px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal .calculadora-container {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.principal .calculadora-container .pantalla-calculadora {
+  width: 100%;
+  height: 150px;
+
+  background: rgb(227,7,178);
+  background: linear-gradient(90deg, rgba(227,7,178,1) 0%, rgba(255,184,0,1) 100%);
+}
+
+.principal .calculadora-container .pantalla-calculadora .pantalla-numeros {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+}
+
+.principal .calculadora-container .pantalla-calculadora .pantalla-numeros span {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.principal .calculadora-container .pantalla-calculadora .pantalla-resultado {
+  width: 100%;
+  height: 50%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.principal .calculadora-container .pantalla-calculadora .pantalla-resultado span {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+
+  font-size: 25px;
+}
+
+.principal .calculadora-container .calculadora-teclado {
+  width: 100%;
+  height: calc(100% - 150px);
+}
+
+.principal .calculadora-container .calculadora-teclado .parte {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  align-items: center;
+}
+
+.principal .calculadora-container .calculadora-teclado .parte .teclas {
+  display: inline-block;
+  background-color: white;
+  box-sizing: border-box;
+
+  width: 88px;
+  height: 100%;
+  padding: 20px 0 20px 0;
+
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.principal .calculadora-container .calculadora-teclado .parte .teclas:hover {
+  color: #e307b2;
+}
+
+.principal .calculadora-container .calculadora-teclado .primera-parte #tecla-C {
+  width: calc(100% - 88px);
+}
+
+.principal .calculadora-container .calculadora-teclado .quinta-parte #tecla-0 {
+  width: 176px;
+}
+
+.principal .calculadora-container .calculadora-teclado .primera-parte .teclaColor {
+  background-color: #e4e8ec;
+}
+
+.principal .calculadora-container .calculadora-teclado .segunda-parte .teclaColor {
+  background-color: #e4e8ec;
+}
+
+.principal .calculadora-container .calculadora-teclado .tercera-parte .teclaColor {
+  background-color: #e4e8ec;
+}
+
+.principal .calculadora-container .calculadora-teclado .cuarta-parte .teclaColor {
+  background-color: #e4e8ec;
+}
+
+.principal .calculadora-container .calculadora-teclado .quinta-parte #tecla-igual {
+  background: rgb(227,7,178);
+  background: linear-gradient(90deg, rgba(227,7,178,1) 0%, rgba(255,184,0,1) 100%);
+}
+
+.principal .calculadora-container .calculadora-teclado .quinta-parte #tecla-igual:hover {
+  color: white;
+}
